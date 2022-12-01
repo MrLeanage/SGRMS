@@ -9,6 +9,7 @@ import com.grms.data.model.Guideline;
 import com.grms.data.model.User;
 import com.grms.data.model.UserValidation;
 import com.grms.logic.controller.GuidelineController;
+import com.grms.logic.controller.StatisticController;
 import com.grms.logic.controller.UserController;
 import com.grms.logic.utility.Authentication;
 import java.io.IOException;
@@ -133,8 +134,12 @@ public class LoginControllerServlet extends HttpServlet {
         ArrayList<User> userList = new ArrayList();
         UserController userController = new UserController();
         userList = userController.loadAllStudentUsers();
+        request.setAttribute("feedbackPerformanceList", StatisticController.getFeedbackPerformancePercentages());
         request.setAttribute("userList", userList);
         request.setAttribute("guidelineList", guidelineList);
+         request.setAttribute("pendingCount", StatisticController.getTotalGrievanceCountByStatus("Pending"));
+        request.setAttribute("processingCount", StatisticController.getTotalGrievanceCountByStatus("Processing"));
+        request.setAttribute("FinishedCount", StatisticController.getTotalGrievanceCountByStatus("Finished"));
         request.getRequestDispatcher("/admin/index.jsp").forward(request, response);
 
     }

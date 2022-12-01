@@ -1,6 +1,6 @@
 
 
-<div class="border-bottom-2 py-32pt position-relative z-1">
+<!--<div class="border-bottom-2 py-32pt position-relative z-1">
     <div class="container-fluid page__container d-flex flex-column flex-md-row align-items-center text-center text-sm-left">
         <div class="flex d-flex flex-column flex-sm-row align-items-center mb-24pt mb-md-0">
 
@@ -10,7 +10,7 @@
             </div>
         </div>
     </div>
-</div>
+</div>-->
 
 <div class="container-fluid page__container">
     <div class="page-section">
@@ -20,7 +20,8 @@
                 <div class="card card-group-row__card">
                     <div class="card-body d-flex flex-column align-items-center">
                         <div class="p-3">
-                            <div class="alert alert-soft-success mb-lg-32pt">
+                             <img src="${pageContext.request.contextPath}/client/assets/images/stories/student-workspace.jpg" class="img-fluid" alt="Responsive image">
+                            <div class="alert alert-dark mb-lg-32pt">
                                 <div class="d-flex flex-wrap align-items-start">
                                     <div class="mr-8pt">
                                         <i class="material-icons">access_time</i>
@@ -32,7 +33,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <img src="${pageContext.request.contextPath}/admin/assets/images/stories/workplace.jpeg" class="img-fluid" alt="Responsive image">
+                           
                             <div class="alert alert-soft-success mb-lg-32pt">
                                 <div class="d-flex flex-wrap align-items-start">
                                     <div class="mr-8pt">

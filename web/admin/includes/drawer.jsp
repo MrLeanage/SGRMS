@@ -173,6 +173,27 @@
                         </li>
                     </ul>
                 </li>
+                <%if( userData.getuType().equals("Administrator")){ %>
+                <li class="sidebar-menu-item">
+                    <a class="sidebar-menu-button js-sidebar-collapse"
+                       data-toggle="collapse"
+                       href="#enterprise_menu">
+                        <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">donut_large</span>
+                        Statistics
+                        <span class="ml-auto sidebar-menu-toggle-icon"></span>
+                    </a>
+                    <ul class="sidebar-submenu collapse sm-indent"
+                        id="enterprise_menu">
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button"
+                               href="<%=request.getContextPath()%>/Statistics">
+                                <span class="sidebar-menu-text">View Statistics</span>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </li>
+                <%}%>
               
                 <li class="sidebar-menu-item">
                     

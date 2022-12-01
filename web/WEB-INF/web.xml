@@ -21,6 +21,10 @@
         <servlet-name>FeedbackControllerServlet</servlet-name>
         <servlet-class>com.grms.presentation.feedbackManagement.FeedbackControllerServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>StatisticControllerServlet</servlet-name>
+        <servlet-class>com.grms.presentation.statisticManagement.StatisticControllerServlet</servlet-class>
+    </servlet>
     <!--Servlet Mapping -->
     <servlet-mapping>
         <servlet-name>LoginControllerServlet</servlet-name>
@@ -74,6 +78,12 @@
         <url-pattern>/Feedback</url-pattern>
         <url-pattern>/SubmitFeedback</url-pattern>
         <url-pattern>/ViewGivenFeedback</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>StatisticControllerServlet</servlet-name>
+        <url-pattern>/Statistics</url-pattern>
+        <url-pattern>/ManagerPerformance</url-pattern>
+        <url-pattern>/GrievanceStatistics</url-pattern>
     </servlet-mapping>
     <!--Welcome Files-->
     <welcome-file-list>

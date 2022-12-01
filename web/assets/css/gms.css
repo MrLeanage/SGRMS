@@ -18,3 +18,14 @@ and open the template in the editor.
 .warning {color: #ff9800;} /* Orange */
 .danger {color: #f44336;} /* Red */
 .other {color: #e7e7e7; color: black;} /* Gray */
+
+.bg-img {
+
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}

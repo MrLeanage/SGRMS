@@ -19,14 +19,19 @@
         <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/gms.css" />
 
     </head>
-    <body class="font-muli theme-cyan gradient">
+    <body class="font-muli theme-cyan gradient" >
+     
+        
         <div class="auth option2">
             <div class="auth_left">
-                <div class="card">
-                    <div class="card-body">
+                <div class="card" style=" background-image: url('${pageContext.request.contextPath}/assets/images/themes/home-cover.jpg'); background-position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;">
+                    <div class="card-body ">
                         <div class="text-center">
                             <img src="${pageContext.request.contextPath}/assets/images/logo/logo100x100.png" class="logo img-responsive center-block" />
-                            <div class="card-title mt-3">Login to your GRMS Account</div>
+                            <div class="card-title mt-3" style="color : white; font-weight: bolder; font-size: 20px">Login to your GRMS Account</div>
                         </div>
                         <form action="<%=request.getContextPath()%>/Login-Validate" method="POST">
                             <%
@@ -44,7 +49,7 @@
                                     <%=user.getuStatus()%>
                                 </p>
                             </div>
-                            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+                                <button type="submit" class="btn btn-primary btn-block" style="font-weight: bold">SIGN IN</button>
                         </form>
                     </div>
                 </div>
