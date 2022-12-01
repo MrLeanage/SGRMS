@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/D:/Workspaces/Netbeans/SGRMS/src/java/com/grms/data/model/ChatParticipant.java</file>
+            <file>file:/D:/Workspaces/Netbeans/SGRMS/src/java/com/grms/data/model/User.java</file>
+            <file>file:/D:/Workspaces/Netbeans/SGRMS/src/java/com/grms/logic/utility/Authentication.java</file>
+            <file>file:/D:/Workspaces/Netbeans/SGRMS/src/java/com/grms/presentation/userManagement/UserAccountControllerServlet.java</file>
+            <file>file:/D:/Workspaces/Netbeans/SGRMS/src/java/com/grms/data/query/GrievanceQuery.java</file>
+            <file>file:/D:/Workspaces/Netbeans/SGRMS/src/java/com/grms/presentation/grievanceManagement/GrievanceControllerServlet.java</file>
+            <file>file:/D:/Workspaces/Netbeans/SGRMS/src/java/com/grms/data/local/LocalData.java</file>
+            <file>file:/D:/Workspaces/Netbeans/SGRMS/src/java/com/grms/data/services/FeedbackService.java</file>
+            <file>file:/D:/Workspaces/Netbeans/SGRMS/src/java/com/grms/data/model/ChatMessage.java</file>
+            <file>file:/D:/Workspaces/Netbeans/SGRMS/src/java/com/grms/data/model/GrievanceManagerStatistics.java</file>
+            <file>file:/D:/Workspaces/Netbeans/SGRMS/src/java/com/grms/data/services/GuidelineService.java</file>
+            <file>file:/D:/Workspaces/Netbeans/SGRMS/src/java/com/grms/presentation/userManagement/LoginControllerServlet.java</file>
+            <file>file:/D:/Workspaces/Netbeans/SGRMS/src/java/com/grms/data/constant/Constant.java</file>
+            <file>file:/D:/Workspaces/Netbeans/SGRMS/src/java/com/grms/data/query/FeedbackQuery.java</file>
+            <file>file:/D:/Workspaces/Netbeans/SGRMS/src/java/com/grms/logic/utility/UtilityMethod.java</file>
+            <file>file:/D:/Workspaces/Netbeans/SGRMS/src/java/com/grms/data/query/GuidelineQuery.java</file>
+            <file>file:/D:/Workspaces/Netbeans/SGRMS/src/java/com/grms/logic/chatServer/ChatroomServerEndpoint.java</file>
+            <file>file:/D:/Workspaces/Netbeans/SGRMS/src/java/com/grms/presentation/guidelineManagement/GuidelineControllerServlet.java</file>
+            <file>file:/D:/Workspaces/Netbeans/SGRMS/src/java/com/grms/data/model/Guideline.java</file>
+            <file>file:/D:/Workspaces/Netbeans/SGRMS/src/java/com/grms/logic/chatServer/ChatroomServerConfigurator.java</file>
+            <file>file:/D:/Workspaces/Netbeans/SGRMS/src/java/com/grms/data/model/Grievance.java</file>
+            <file>file:/D:/Workspaces/Netbeans/SGRMS/src/java/com/grms/data/services/GrievanceService.java</file>
+            <file>file:/D:/Workspaces/Netbeans/SGRMS/web/WEB-INF/web.xml</file>
+            <file>file:/D:/Workspaces/Netbeans/SGRMS/src/java/com/grms/data/model/Feedback.java</file>
+            <file>file:/D:/Workspaces/Netbeans/SGRMS/src/java/com/grms/data/query/UserQuery.java</file>
+            <file>file:/D:/Workspaces/Netbeans/SGRMS/src/java/com/grms/logic/utility/Validation.java</file>
+            <file>file:/D:/Workspaces/Netbeans/SGRMS/src/java/com/grms/presentation/feedbackManagement/FeedbackControllerServlet.java</file>
+            <file>file:/D:/Workspaces/Netbeans/SGRMS/src/java/com/grms/data/dbConnection/DBConnection.java</file>
+            <file>file:/D:/Workspaces/Netbeans/SGRMS/src/java/com/grms/logic/utility/ManagerAllocator.java</file>
+            <file>file:/D:/Workspaces/Netbeans/SGRMS/src/java/com/grms/data/services/UserService.java</file>
+            <file>file:/D:/Workspaces/Netbeans/SGRMS/src/java/com/grms/data/model/UserValidation.java</file>
+        </group>
+    </open-files>
+</project-private>
