@@ -130,6 +130,106 @@
             </div>
 
         </div>
+                        
+         <div class="row card-group-row mb-lg-8pt">
+
+            <div class="col-lg card-group-row__col">
+                <div class="card card-group-row__card">
+                    <div class="card-header d-flex align-items-center">
+                        <strong class="flex">FEEDBACK SUMMARY</strong>
+                        <a href="#"><i class="material-icons text-50">more_horiz</i></a>
+                    </div>
+                    <% ArrayList<FeedbackPerformance> feedbackPerformanceList = (ArrayList<FeedbackPerformance>) request.getAttribute("feedbackPerformanceList"); %>
+                    <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                        <ul class="list-unstyled list-skills w-100">
+                            <% for (FeedbackPerformance feedbackPerformance : feedbackPerformanceList) {%>
+                            <li class="mb-8pt">
+                                <div class="text-100 border-right"><small><%=feedbackPerformance.getCategory()%></small></div>
+                                <div class="flex">
+                                    <div class="progress"
+                                         style="height: 10px;">
+                                        <% if (feedbackPerformance.getCategory().equals("Service Appreciation Feedback")) {%>
+                                        <div class="progress-bar bg-success"
+                                             role="progressbar"
+                                             style="width: <%=feedbackPerformance.getPercentage()%>%"
+                                             aria-valuenow="61"
+                                             aria-valuemin="0"
+                                             aria-valuemax="100"></div>
+                                        <% }%>
+                                        <% if (feedbackPerformance.getCategory().equals("Service Complain Feedback")) {%>
+                                        <div class="progress-bar bg-danger"
+                                             role="progressbar"
+                                             style="width: <%=feedbackPerformance.getPercentage()%>%"
+                                             aria-valuenow="61"
+                                             aria-valuemin="0"
+                                             aria-valuemax="100"></div>
+                                        <% }%>
+                                        <% if (feedbackPerformance.getCategory().equals("Service Request to Re Open Grievance")) {%>
+                                        <div class="progress-bar bg-warning"
+                                             role="progressbar"
+                                             style="width: <%=feedbackPerformance.getPercentage()%>%"
+                                             aria-valuenow="61"
+                                             aria-valuemin="0"
+                                             aria-valuemax="100"></div>
+                                        <% }%>
+                                    </div>
+
+
+
+                                </div>
+                                <div class="text-70"><small><%=feedbackPerformance.getPercentage()%>%</small></div>
+                            </li>
+                            <%}%>
+
+                        </ul>
+                    </div>
+                    <div class="card-footer p-8pt">
+
+                        <ul class="pagination justify-content-start pagination-xsm m-0">
+                            <li class="page-item disabled">
+                                <a class="page-link"
+                                   href="#"
+                                   aria-label="Previous">
+                                    <span aria-hidden="true"
+                                          class="material-icons">chevron_left</span>
+                                    <span>Prev</span>
+                                </a>
+                            </li>
+                            <li class="page-item dropdown">
+                                <a class="page-link dropdown-toggle"
+                                   data-toggle="dropdown"
+                                   href="#"
+                                   aria-label="Page">
+                                    <span>1</span>
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a href="#"
+                                       class="dropdown-item active">1</a>
+                                    <a href="#"
+                                       class="dropdown-item">2</a>
+                                    <a href="#"
+                                       class="dropdown-item">3</a>
+                                    <a href="#"
+                                       class="dropdown-item">4</a>
+                                    <a href="#"
+                                       class="dropdown-item">5</a>
+                                </div>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link"
+                                   href="#"
+                                   aria-label="Next">
+                                    <span>Next</span>
+                                    <span aria-hidden="true"
+                                          class="material-icons">chevron_right</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
         <%}%>
       
         <div class="page-separator">
@@ -238,105 +338,7 @@
             </div>
         </div>  
         <%}%>
-<div class="row card-group-row mb-lg-8pt">
-
-            <div class="col-lg card-group-row__col">
-                <div class="card card-group-row__card">
-                    <div class="card-header d-flex align-items-center">
-                        <strong class="flex">FEEDBACK SUMMARY</strong>
-                        <a href="#"><i class="material-icons text-50">more_horiz</i></a>
-                    </div>
-                    <% ArrayList<FeedbackPerformance> feedbackPerformanceList = (ArrayList<FeedbackPerformance>) request.getAttribute("feedbackPerformanceList"); %>
-                    <div class="card-body d-flex flex-column align-items-center justify-content-center">
-                        <ul class="list-unstyled list-skills w-100">
-                            <% for (FeedbackPerformance feedbackPerformance : feedbackPerformanceList) {%>
-                            <li class="mb-8pt">
-                                <div class="text-100 border-right"><small><%=feedbackPerformance.getCategory()%></small></div>
-                                <div class="flex">
-                                    <div class="progress"
-                                         style="height: 10px;">
-                                        <% if (feedbackPerformance.getCategory().equals("Service Appreciation Feedback")) {%>
-                                        <div class="progress-bar bg-success"
-                                             role="progressbar"
-                                             style="width: <%=feedbackPerformance.getPercentage()%>%"
-                                             aria-valuenow="61"
-                                             aria-valuemin="0"
-                                             aria-valuemax="100"></div>
-                                        <% }%>
-                                        <% if (feedbackPerformance.getCategory().equals("Service Complain Feedback")) {%>
-                                        <div class="progress-bar bg-danger"
-                                             role="progressbar"
-                                             style="width: <%=feedbackPerformance.getPercentage()%>%"
-                                             aria-valuenow="61"
-                                             aria-valuemin="0"
-                                             aria-valuemax="100"></div>
-                                        <% }%>
-                                        <% if (feedbackPerformance.getCategory().equals("Service Request to Re Open Grievance")) {%>
-                                        <div class="progress-bar bg-warning"
-                                             role="progressbar"
-                                             style="width: <%=feedbackPerformance.getPercentage()%>%"
-                                             aria-valuenow="61"
-                                             aria-valuemin="0"
-                                             aria-valuemax="100"></div>
-                                        <% }%>
-                                    </div>
-
-
-
-                                </div>
-                                <div class="text-70"><small><%=feedbackPerformance.getPercentage()%>%</small></div>
-                            </li>
-                            <%}%>
-
-                        </ul>
-                    </div>
-                    <div class="card-footer p-8pt">
-
-                        <ul class="pagination justify-content-start pagination-xsm m-0">
-                            <li class="page-item disabled">
-                                <a class="page-link"
-                                   href="#"
-                                   aria-label="Previous">
-                                    <span aria-hidden="true"
-                                          class="material-icons">chevron_left</span>
-                                    <span>Prev</span>
-                                </a>
-                            </li>
-                            <li class="page-item dropdown">
-                                <a class="page-link dropdown-toggle"
-                                   data-toggle="dropdown"
-                                   href="#"
-                                   aria-label="Page">
-                                    <span>1</span>
-                                </a>
-                                <div class="dropdown-menu">
-                                    <a href="#"
-                                       class="dropdown-item active">1</a>
-                                    <a href="#"
-                                       class="dropdown-item">2</a>
-                                    <a href="#"
-                                       class="dropdown-item">3</a>
-                                    <a href="#"
-                                       class="dropdown-item">4</a>
-                                    <a href="#"
-                                       class="dropdown-item">5</a>
-                                </div>
-                            </li>
-                            <li class="page-item">
-                                <a class="page-link"
-                                   href="#"
-                                   aria-label="Next">
-                                    <span>Next</span>
-                                    <span aria-hidden="true"
-                                          class="material-icons">chevron_right</span>
-                                </a>
-                            </li>
-                        </ul>
-
-                    </div>
-                </div>
-            </div>
-        </div>
+       
         <div class="page-separator">
             <div class="page-separator__text">Discussions</div>
         </div>

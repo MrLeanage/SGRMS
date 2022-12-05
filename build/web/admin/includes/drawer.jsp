@@ -93,7 +93,7 @@
                             </a>
                         </li>
                         <%}%>
-                        <%if(userData.getuType().equals("Manager - Level 1") || userData.getuType().equals("Administrator")){ %>
+                        <%if(userData.getuType().equals("Manager - Level 1") ){ %>
                         <li class="sidebar-menu-item">
                             <a class="sidebar-menu-button"
                                href="<%=request.getContextPath()%>/ManageManager">
