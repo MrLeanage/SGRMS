@@ -216,7 +216,7 @@ public class FeedbackControllerServlet extends HttpServlet {
         log("Chat data End");
 
         log("User from chat:" + user.getuID());
-        if (user.getuType().equals("Employee")) {
+        if (user.getuType().equals("Student")) {
             request.getRequestDispatcher("/client/grievanceManagement/message.jsp").forward(request, response);
         } else {
             ArrayList<Grievance> grievanceList = GrievanceController.getProcessingManagerGrievanceList(user.getuID(), gStatus);
